@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="App4.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App4"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ads="using:Microsoft.Advertising.WinRT.UI"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ads:AdControl
+                ApplicationId="3f83fe91-d6be-434d-a0ae-7351c5a997f1" AdUnitId="10865270"
+                Width="300" Height="250"
+                AdRefreshed="OnAdRefreshed"
+                ErrorOccurred="OnErrorOccurred"/>
+    </Grid>
+</Page>
